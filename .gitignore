@@ -1,0 +1,5 @@
+HavokHags/Library
+HavokHags/Logs
+HavokHags/UserSettings
+*.csproj
+*.sln
