@@ -3,3 +3,5 @@ HavokHags/Logs
 HavokHags/UserSettings
 *.csproj
 *.sln
+HavokHags/obj
+HavokHags/.DS_Store
