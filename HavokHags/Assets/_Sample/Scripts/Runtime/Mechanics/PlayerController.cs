@@ -14,6 +14,12 @@ namespace Platformer.Mechanics
     /// </summary>
     public class PlayerController : KinematicObject
     {
+        [Header("Options")] 
+        
+        public bool FlipX;
+        
+        
+        [Header("Unsorted")]
         public AudioClip jumpAudio;
         public AudioClip respawnAudio;
         public AudioClip ouchAudio;
@@ -126,9 +132,9 @@ namespace Platformer.Mechanics
             }
 
             if (move.x > 0.01f)
-                spriteRenderer.flipX = false;
+                spriteRenderer.flipX = FlipX;
             else if (move.x < -0.01f)
-                spriteRenderer.flipX = true;
+                spriteRenderer.flipX = !FlipX;
 
             animator.SetBool("grounded", IsGrounded);
             animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
