@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TestTileMap_8
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: -1640690965, guid: fa413defd92e1406597fde58ef85dba1, type: 3}
-  m_Color: {r: 0.23994301, g: 0.4528302, b: 0.20719118, a: 1}
+  m_Color: {r: 0.24697402, g: 0.5183718, b: 0.6981132, a: 1}
   m_Transform:
     e00: 1
     e01: 0

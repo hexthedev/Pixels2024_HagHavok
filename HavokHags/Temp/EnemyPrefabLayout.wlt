@@ -368,7 +368,7 @@ MonoBehaviour:
   m_LastFolders:
   - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: /Users/jamesmccafferty/repos/Pixels2024_HagHavok/HavokHags
+  m_LastProjectPath: /Users/olga.belavina/dev/Pixels2024_HagHavok/HavokHags
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
