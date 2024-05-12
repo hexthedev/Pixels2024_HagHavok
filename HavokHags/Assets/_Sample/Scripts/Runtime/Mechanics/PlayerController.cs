@@ -36,8 +36,8 @@ namespace Platformer.Mechanics
 
         bool jump;
         Vector2 move;
-        SpriteRenderer spriteRenderer;
-        internal Animator animator;
+        [SerializeField] SpriteRenderer spriteRenderer;
+        [SerializeField] public Animator animator;
         readonly PlatformerModel model = Simulation.GetModel<PlatformerModel>();
 
         public Bounds Bounds => collider2d.bounds;
@@ -47,8 +47,6 @@ namespace Platformer.Mechanics
             health = GetComponent<Health>();
             audioSource = GetComponent<AudioSource>();
             collider2d = GetComponent<Collider2D>();
-            spriteRenderer = GetComponent<SpriteRenderer>();
-            animator = GetComponent<Animator>();
         }
 
         protected override void Update()
@@ -62,6 +60,15 @@ namespace Platformer.Mechanics
                 {
                     stopJump = true;
                     Schedule<PlayerStopJump>().player = this;
+                }
+
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    animator.SetTrigger("attackClose");
+                }
+                else if(Input.GetKeyDown(KeyCode.Q))
+                {
+                    animator.SetTrigger("attackLong");
                 }
             }
             else
