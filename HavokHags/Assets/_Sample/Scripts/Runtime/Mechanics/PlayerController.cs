@@ -14,11 +14,11 @@ namespace Platformer.Mechanics
     /// </summary>
     public class PlayerController : KinematicObject
     {
-        [Header("Options")] 
-        
+        [Header("Options")]
+
         public bool FlipX;
-        
-        
+
+
         [Header("Unsorted")]
         public AudioClip jumpAudio;
         public AudioClip respawnAudio;
@@ -35,8 +35,10 @@ namespace Platformer.Mechanics
 
         public JumpState jumpState = JumpState.Grounded;
         private bool stopJump;
-        /*internal new*/ public Collider2D collider2d;
-        /*internal new*/ public AudioSource audioSource;
+        /*internal new*/
+        public Collider2D collider2d;
+        /*internal new*/
+        public AudioSource audioSource;
         public Health health;
         public bool controlEnabled = true;
 
@@ -47,6 +49,9 @@ namespace Platformer.Mechanics
         readonly PlatformerModel model = Simulation.GetModel<PlatformerModel>();
 
         public Bounds Bounds => collider2d.bounds;
+        public SpellProjectile spellPrefab;
+        public float spellForce = 20f;
+
 
         void Awake()
         {
@@ -72,9 +77,10 @@ namespace Platformer.Mechanics
                 {
                     animator.SetTrigger("attackClose");
                 }
-                else if(Input.GetKeyDown(KeyCode.Q))
+                else if (Input.GetKeyDown(KeyCode.Q))
                 {
                     animator.SetTrigger("attackLong");
+                    CastSpell();
                 }
             }
             else
@@ -140,6 +146,17 @@ namespace Platformer.Mechanics
             animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
 
             targetVelocity = move * maxSpeed;
+        }
+
+        private void CastSpell()
+        {
+            SpellProjectile spellInstance = Instantiate(spellPrefab, transform.position, transform.rotation);
+            spellInstance.caster = gameObject;
+            Rigidbody2D spellRb = spellInstance.GetComponent<Rigidbody2D>();
+            Vector2 castDirection = spriteRenderer.flipX ? Vector2.left : Vector2.right;
+
+            // Apply the force in the direction the character is facing
+            spellRb.AddForce(castDirection * spellForce, ForceMode2D.Impulse);
         }
 
         public enum JumpState

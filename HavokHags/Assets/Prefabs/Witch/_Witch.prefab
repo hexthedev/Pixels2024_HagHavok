@@ -65,6 +65,9 @@ MonoBehaviour:
   controlEnabled: 1
   spriteRenderer: {fileID: 7000235743160843155}
   animator: {fileID: 2885298614672352549}
+  spellPrefab: {fileID: 8191481893592317935, guid: 1e1c51eda4ef24c7a8e7e1d968d2d971,
+    type: 3}
+  spellForce: 20
 --- !u!50 &3927635431356944084
 Rigidbody2D:
   serializedVersion: 4
@@ -73,7 +76,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5020054172770816556}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
@@ -233,7 +236,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.09, y: -0.14}
+  m_Offset: {x: 0.071945116, y: -0.0476259}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -244,7 +247,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.54}
+  m_Size: {x: 0.46389022, y: 0.7446897}
   m_EdgeRadius: 0
 --- !u!1 &6720464640672520455
 GameObject:

@@ -336,6 +336,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: _Witch@Olga
       objectReference: {fileID: 0}
+    - target: {fileID: 3876632353540190546, guid: 2de293af5c7184fae911272fbf95c262,
+        type: 3}
+      propertyPath: MinDistance
+      value: 0.35692215
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -404,6 +409,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: _Witch@Layla
       objectReference: {fileID: 0}
+    - target: {fileID: 4406044851887567442, guid: 766a30962be1541bfbf4437b0d4eac57,
+        type: 3}
+      propertyPath: spellPrefab
+      value: 
+      objectReference: {fileID: 8191481893592317935, guid: 1e1c51eda4ef24c7a8e7e1d968d2d971,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3939,7 +3950,7 @@ Transform:
   m_GameObject: {fileID: 1392806001}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.177983, y: 0.62594324, z: 0.035673212}
+  m_LocalPosition: {x: -4.177983, y: 0.62594324, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
