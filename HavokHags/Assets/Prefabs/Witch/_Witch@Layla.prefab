@@ -11,7 +11,7 @@ PrefabInstance:
     - target: {fileID: 5020054172770816556, guid: 1d2f32053046f474abab56e085b1d40c,
         type: 3}
       propertyPath: m_Name
-      value: _Witch
+      value: _Witch@Layla
       objectReference: {fileID: 0}
     - target: {fileID: 6002757315539328484, guid: 1d2f32053046f474abab56e085b1d40c,
         type: 3}
@@ -61,6 +61,11 @@ PrefabInstance:
     - target: {fileID: 6002757315539328484, guid: 1d2f32053046f474abab56e085b1d40c,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7648745814280620817, guid: 1d2f32053046f474abab56e085b1d40c,
+        type: 3}
+      propertyPath: FlipX
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

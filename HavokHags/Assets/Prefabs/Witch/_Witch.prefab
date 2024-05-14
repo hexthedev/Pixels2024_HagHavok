@@ -52,7 +52,8 @@ MonoBehaviour:
   minGroundNormalY: 0.9
   gravityModifier: 1
   velocity: {x: 0, y: 0}
-  FlipX: 0
+  FlipX: 1
+  MoveSpeed: 1
   jumpAudio: {fileID: 8300000, guid: 67975c08d56ceb147bad38572d805aa8, type: 3}
   respawnAudio: {fileID: 8300000, guid: e18959d46b63f3c4c8cc020a433cf848, type: 3}
   ouchAudio: {fileID: 8300000, guid: 6c05149e5a2fba64ba172e25a61074b7, type: 3}
@@ -68,6 +69,12 @@ MonoBehaviour:
   spellPrefab: {fileID: 8191481893592317935, guid: 1e1c51eda4ef24c7a8e7e1d968d2d971,
     type: 3}
   spellForce: 20
+  Jump: 119
+  Left: 97
+  Down: 115
+  Right: 100
+  AttackLong: 113
+  AttackShort: 101
 --- !u!50 &3927635431356944084
 Rigidbody2D:
   serializedVersion: 4

@@ -13,6 +13,11 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: fe2619735d2864499beebcafd971cfb4, type: 2}
+    - target: {fileID: 4740883182162501705, guid: 1d2f32053046f474abab56e085b1d40c,
+        type: 3}
+      propertyPath: MinDistance
+      value: 0.35692215
+      objectReference: {fileID: 0}
     - target: {fileID: 5020054172770816556, guid: 1d2f32053046f474abab56e085b1d40c,
         type: 3}
       propertyPath: m_Name
@@ -21,12 +26,12 @@ PrefabInstance:
     - target: {fileID: 6002757315539328484, guid: 1d2f32053046f474abab56e085b1d40c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 4.37
       objectReference: {fileID: 0}
     - target: {fileID: 6002757315539328484, guid: 1d2f32053046f474abab56e085b1d40c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -3.72
       objectReference: {fileID: 0}
     - target: {fileID: 6002757315539328484, guid: 1d2f32053046f474abab56e085b1d40c,
         type: 3}
@@ -74,11 +79,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1590607200, guid: ec3cbdc03709142cf8c852bc77cd5d31,
         type: 3}
-    - target: {fileID: 7648745814280620817, guid: 1d2f32053046f474abab56e085b1d40c,
-        type: 3}
-      propertyPath: FlipX
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

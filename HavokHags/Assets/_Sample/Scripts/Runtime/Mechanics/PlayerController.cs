@@ -5,6 +5,7 @@ using Platformer.Gameplay;
 using static Platformer.Core.Simulation;
 using Platformer.Model;
 using Platformer.Core;
+using UnityEngine.Serialization;
 
 namespace Platformer.Mechanics
 {
@@ -15,8 +16,8 @@ namespace Platformer.Mechanics
     public class PlayerController : KinematicObject
     {
         [Header("Options")]
-
         public bool FlipX;
+        public float MoveSpeed;
 
 
         [Header("Unsorted")]
@@ -52,6 +53,14 @@ namespace Platformer.Mechanics
         public SpellProjectile spellPrefab;
         public float spellForce = 20f;
 
+        [Header("Controls")] 
+        public KeyCode Jump;
+        public KeyCode Left;
+        public KeyCode Down;
+        public KeyCode Right;
+        public KeyCode AttackLong;
+        public KeyCode AttackShort;
+        
 
         void Awake()
         {
@@ -64,20 +73,26 @@ namespace Platformer.Mechanics
         {
             if (controlEnabled)
             {
-                move.x = Input.GetAxis("Horizontal");
-                if (jumpState == JumpState.Grounded && Input.GetButtonDown("Jump"))
+                if (Input.GetKey(Left))
+                    move.x = -MoveSpeed;
+                else if (Input.GetKey(Right))
+                    move.x = MoveSpeed;
+                else
+                    move.x = 0;
+                
+                if (jumpState == JumpState.Grounded && Input.GetKeyDown(Jump))
                     jumpState = JumpState.PrepareToJump;
-                else if (Input.GetButtonUp("Jump"))
+                else if (Input.GetKeyUp(Jump))
                 {
                     stopJump = true;
                     Schedule<PlayerStopJump>().player = this;
                 }
 
-                if (Input.GetKeyDown(KeyCode.E))
+                if (Input.GetKeyDown(AttackShort))
                 {
                     animator.SetTrigger("attackClose");
                 }
-                else if (Input.GetKeyDown(KeyCode.Q))
+                else if (Input.GetKeyDown(AttackLong))
                 {
                     animator.SetTrigger("attackLong");
                     CastSpell();

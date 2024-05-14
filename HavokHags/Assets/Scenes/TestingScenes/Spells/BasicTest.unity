@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12099226, g: 0.07914131, b: 0.059703007, a: 1}
+  m_IndirectSpecularColor: {r: 0.12099226, g: 0.079141304, b: 0.059703007, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -281,6 +281,36 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2171400773786933770, guid: 2de293af5c7184fae911272fbf95c262,
+        type: 3}
+      propertyPath: Down
+      value: 107
+      objectReference: {fileID: 0}
+    - target: {fileID: 2171400773786933770, guid: 2de293af5c7184fae911272fbf95c262,
+        type: 3}
+      propertyPath: Jump
+      value: 105
+      objectReference: {fileID: 0}
+    - target: {fileID: 2171400773786933770, guid: 2de293af5c7184fae911272fbf95c262,
+        type: 3}
+      propertyPath: Left
+      value: 106
+      objectReference: {fileID: 0}
+    - target: {fileID: 2171400773786933770, guid: 2de293af5c7184fae911272fbf95c262,
+        type: 3}
+      propertyPath: Right
+      value: 108
+      objectReference: {fileID: 0}
+    - target: {fileID: 2171400773786933770, guid: 2de293af5c7184fae911272fbf95c262,
+        type: 3}
+      propertyPath: AttackLong
+      value: 117
+      objectReference: {fileID: 0}
+    - target: {fileID: 2171400773786933770, guid: 2de293af5c7184fae911272fbf95c262,
+        type: 3}
+      propertyPath: AttackShort
+      value: 111
+      objectReference: {fileID: 0}
     - target: {fileID: 2830938210308099327, guid: 2de293af5c7184fae911272fbf95c262,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -334,12 +364,7 @@ PrefabInstance:
     - target: {fileID: 3579587754526180151, guid: 2de293af5c7184fae911272fbf95c262,
         type: 3}
       propertyPath: m_Name
-      value: _Witch@Olga
-      objectReference: {fileID: 0}
-    - target: {fileID: 3876632353540190546, guid: 2de293af5c7184fae911272fbf95c262,
-        type: 3}
-      propertyPath: MinDistance
-      value: 0.35692215
+      value: _Witch@Layla
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -357,7 +382,7 @@ PrefabInstance:
     - target: {fileID: 310383614424048807, guid: 766a30962be1541bfbf4437b0d4eac57,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.63
+      value: -4.62
       objectReference: {fileID: 0}
     - target: {fileID: 310383614424048807, guid: 766a30962be1541bfbf4437b0d4eac57,
         type: 3}
@@ -407,7 +432,7 @@ PrefabInstance:
     - target: {fileID: 1345018374987017071, guid: 766a30962be1541bfbf4437b0d4eac57,
         type: 3}
       propertyPath: m_Name
-      value: _Witch@Layla
+      value: _Witch@Olga
       objectReference: {fileID: 0}
     - target: {fileID: 4406044851887567442, guid: 766a30962be1541bfbf4437b0d4eac57,
         type: 3}
