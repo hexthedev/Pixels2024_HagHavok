@@ -168,7 +168,7 @@ namespace Platformer.Mechanics
             SpellProjectile spellInstance = Instantiate(spellPrefab, transform.position, transform.rotation);
             spellInstance.caster = gameObject;
             Rigidbody2D spellRb = spellInstance.GetComponent<Rigidbody2D>();
-            Vector2 castDirection = spriteRenderer.flipX ? Vector2.left : Vector2.right;
+            Vector2 castDirection = (spriteRenderer.flipX ? Vector2.left : Vector2.right) * (FlipX ? -1 : 1);
             spellInstance.CastDirection = castDirection;
             spellInstance.isLaunched = true;
 

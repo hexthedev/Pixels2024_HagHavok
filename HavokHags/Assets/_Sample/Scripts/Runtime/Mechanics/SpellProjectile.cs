@@ -16,15 +16,13 @@ public class SpellProjectile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // Generate a random delay no more than 2 seconds
-        float randomDelay = Random.Range(0f, 2f);
         GetComponent<Collider2D>().enabled = false;
 
         // enable collider in 2 seconds
         Invoke("EnableCollider", 0.2f);
             
         // Destroy this game object after a random delay
-        Destroy(gameObject, randomDelay);
+        Destroy(gameObject, 10f);
     }
 
     private void Update()
@@ -34,7 +32,7 @@ public class SpellProjectile : MonoBehaviour
             return;
         }
 
-        GetComponent<Rigidbody2D>().velocity = Vector2.right * speed;
+        GetComponent<Rigidbody2D>().velocity = speed * CastDirection;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
