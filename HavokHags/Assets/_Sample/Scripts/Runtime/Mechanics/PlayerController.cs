@@ -154,6 +154,8 @@ namespace Platformer.Mechanics
             spellInstance.caster = gameObject;
             Rigidbody2D spellRb = spellInstance.GetComponent<Rigidbody2D>();
             Vector2 castDirection = spriteRenderer.flipX ? Vector2.left : Vector2.right;
+            spellInstance.CastDirection = castDirection;
+            spellInstance.isLaunched = true;
 
             // Apply the force in the direction the character is facing
             spellRb.AddForce(castDirection * spellForce, ForceMode2D.Impulse);

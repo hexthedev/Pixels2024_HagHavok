@@ -10,32 +10,55 @@ public class SpellProjectile : MonoBehaviour
     private float pushbackForce = 2f;
     public GameObject caster;
 
+    public bool isLaunched = false;
+    public Vector2 CastDirection;
+
     // Start is called before the first frame update
     void Start()
     {
+        // Generate a random delay no more than 2 seconds
+        float randomDelay = Random.Range(0f, 2f);
+        GetComponent<Collider2D>().enabled = false;
 
+        // enable collider in 2 seconds
+        Invoke("EnableCollider", 2f);
+            
+        // Destroy this game object after a random delay
+        Destroy(gameObject, randomDelay);
     }
 
     private void Update()
     {
-        transform.Translate(Vector3.right * speed * Time.deltaTime);
+        if (caster == null || !isLaunched)
+        {
+            return;
+        }
+        transform.Translate(Vector2.right * speed * Time.deltaTime);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Collision");
+        if (collision.gameObject == caster)
+        {
+            // Destroy the projectile when it hits the ground
+            return;
+        }
 
         if (collision.gameObject.tag == "Player" && collision.gameObject != caster)
         {
-            Debug.Log("Hit player");
             // Apply force or effect to the hit character
             ApplyPushbackForce(collision.gameObject);
             GetComponent<Collider2D>().enabled = false;
-            // Destroy(gameObject);
         }
+
+        Destroy(gameObject);
     }
 
 
+    private void EnableCollider()
+    {
+        GetComponent<Collider2D>().enabled = true;
+    }
 
     private void ApplyPushbackForce(GameObject hitCharacter)
     {
