@@ -21,7 +21,7 @@ public class SpellProjectile : MonoBehaviour
         GetComponent<Collider2D>().enabled = false;
 
         // enable collider in 2 seconds
-        Invoke("EnableCollider", 2f);
+        Invoke("EnableCollider", 0.2f);
             
         // Destroy this game object after a random delay
         Destroy(gameObject, randomDelay);
@@ -33,7 +33,8 @@ public class SpellProjectile : MonoBehaviour
         {
             return;
         }
-        transform.Translate(Vector2.right * speed * Time.deltaTime);
+
+        GetComponent<Rigidbody2D>().velocity = Vector2.right * speed;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
