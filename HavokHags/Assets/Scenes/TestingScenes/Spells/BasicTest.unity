@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12099226, g: 0.079141304, b: 0.059703007, a: 1}
+  m_IndirectSpecularColor: {r: 0.12099226, g: 0.07914131, b: 0.059703007, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -281,6 +281,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1522856474139683464, guid: 2de293af5c7184fae911272fbf95c262,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 456016420, guid: ec3cbdc03709142cf8c852bc77cd5d31,
+        type: 3}
+    - target: {fileID: 2171400773786933770, guid: 2de293af5c7184fae911272fbf95c262,
+        type: 3}
+      propertyPath: Fly
+      value: 104
+      objectReference: {fileID: 0}
     - target: {fileID: 2171400773786933770, guid: 2de293af5c7184fae911272fbf95c262,
         type: 3}
       propertyPath: Down
@@ -298,8 +309,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2171400773786933770, guid: 2de293af5c7184fae911272fbf95c262,
         type: 3}
+      propertyPath: FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2171400773786933770, guid: 2de293af5c7184fae911272fbf95c262,
+        type: 3}
       propertyPath: Right
       value: 108
+      objectReference: {fileID: 0}
+    - target: {fileID: 2171400773786933770, guid: 2de293af5c7184fae911272fbf95c262,
+        type: 3}
+      propertyPath: isFlying
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2171400773786933770, guid: 2de293af5c7184fae911272fbf95c262,
         type: 3}
@@ -310,6 +331,21 @@ PrefabInstance:
         type: 3}
       propertyPath: AttackShort
       value: 111
+      objectReference: {fileID: 0}
+    - target: {fileID: 2171400773786933770, guid: 2de293af5c7184fae911272fbf95c262,
+        type: 3}
+      propertyPath: angleChange
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2171400773786933770, guid: 2de293af5c7184fae911272fbf95c262,
+        type: 3}
+      propertyPath: flyingForce
+      value: 2.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2171400773786933770, guid: 2de293af5c7184fae911272fbf95c262,
+        type: 3}
+      propertyPath: ToggleFlying
+      value: 104
       objectReference: {fileID: 0}
     - target: {fileID: 2830938210308099327, guid: 2de293af5c7184fae911272fbf95c262,
         type: 3}
@@ -360,6 +396,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2973627338391816220, guid: 2de293af5c7184fae911272fbf95c262,
+        type: 3}
+      propertyPath: m_Name
+      value: Layla
       objectReference: {fileID: 0}
     - target: {fileID: 3579587754526180151, guid: 2de293af5c7184fae911272fbf95c262,
         type: 3}
@@ -436,10 +477,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4406044851887567442, guid: 766a30962be1541bfbf4437b0d4eac57,
         type: 3}
+      propertyPath: Fly
+      value: 102
+      objectReference: {fileID: 0}
+    - target: {fileID: 4406044851887567442, guid: 766a30962be1541bfbf4437b0d4eac57,
+        type: 3}
+      propertyPath: angleChange
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4406044851887567442, guid: 766a30962be1541bfbf4437b0d4eac57,
+        type: 3}
+      propertyPath: flyingForce
+      value: 2.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4406044851887567442, guid: 766a30962be1541bfbf4437b0d4eac57,
+        type: 3}
       propertyPath: spellPrefab
       value: 
       objectReference: {fileID: 8191481893592317935, guid: 1e1c51eda4ef24c7a8e7e1d968d2d971,
         type: 3}
+    - target: {fileID: 4406044851887567442, guid: 766a30962be1541bfbf4437b0d4eac57,
+        type: 3}
+      propertyPath: ToggleFlying
+      value: 102
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -93,6 +93,45 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -100,12 +139,12 @@ TextureImporter:
       name: Layla_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1
-        width: 30
-        height: 46
+        x: 10
+        y: 2
+        width: 31
+        height: 44
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -121,12 +160,12 @@ TextureImporter:
       name: Layla_1
       rect:
         serializedVersion: 2
-        x: 34
+        x: 42
         y: 2
-        width: 24
+        width: 36
         height: 44
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -142,12 +181,12 @@ TextureImporter:
       name: Layla_2
       rect:
         serializedVersion: 2
-        x: 62
-        y: 3
-        width: 24
-        height: 45
+        x: 79
+        y: 1
+        width: 31
+        height: 44
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -163,12 +202,12 @@ TextureImporter:
       name: Layla_3
       rect:
         serializedVersion: 2
-        x: 91
-        y: 2
-        width: 23
+        x: 111
+        y: 1
+        width: 30
         height: 44
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -184,12 +223,12 @@ TextureImporter:
       name: Layla_4
       rect:
         serializedVersion: 2
-        x: 219
-        y: 2
-        width: 23
-        height: 45
+        x: 142
+        y: 1
+        width: 24
+        height: 44
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -205,12 +244,12 @@ TextureImporter:
       name: Layla_5
       rect:
         serializedVersion: 2
-        x: 243
-        y: 2
-        width: 24
-        height: 44
+        x: 167
+        y: 1
+        width: 35
+        height: 45
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -226,12 +265,12 @@ TextureImporter:
       name: Layla_6
       rect:
         serializedVersion: 2
-        x: 291
+        x: 203
         y: 2
-        width: 33
+        width: 32
         height: 44
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -247,12 +286,12 @@ TextureImporter:
       name: Layla_7
       rect:
         serializedVersion: 2
-        x: 325
-        y: 1
-        width: 35
-        height: 45
+        x: 260
+        y: 2
+        width: 24
+        height: 44
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -268,12 +307,12 @@ TextureImporter:
       name: Layla_8
       rect:
         serializedVersion: 2
-        x: 361
-        y: 1
-        width: 24
-        height: 44
+        x: 285
+        y: 2
+        width: 23
+        height: 45
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -289,12 +328,12 @@ TextureImporter:
       name: Layla_9
       rect:
         serializedVersion: 2
-        x: 386
-        y: 1
-        width: 30
+        x: 413
+        y: 2
+        width: 23
         height: 44
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -310,12 +349,12 @@ TextureImporter:
       name: Layla_10
       rect:
         serializedVersion: 2
-        x: 417
-        y: 1
-        width: 31
-        height: 44
+        x: 441
+        y: 3
+        width: 24
+        height: 45
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -331,12 +370,12 @@ TextureImporter:
       name: Layla_11
       rect:
         serializedVersion: 2
-        x: 449
+        x: 469
         y: 2
-        width: 36
+        width: 24
         height: 44
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -352,12 +391,12 @@ TextureImporter:
       name: Layla_12
       rect:
         serializedVersion: 2
-        x: 486
-        y: 2
-        width: 31
-        height: 44
+        x: 497
+        y: 1
+        width: 30
+        height: 46
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -373,9 +412,9 @@ TextureImporter:
       name: Layla_13
       rect:
         serializedVersion: 2
-        x: 268
+        x: 203
         y: 2
-        width: 23
+        width: 32
         height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -384,8 +423,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df623c5e1b0d34a9e8313e2e5a5e6586
+      spriteID: 6265629dc1bf24533b1e4d3d4d92ccec
       internalID: 605462315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Layla_14
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 2
+        width: 25
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bfb18d43ff204a25bbd48836a235ab0
+      internalID: -1454764298
       vertices: []
       indices: 
       edges: []
@@ -407,6 +467,7 @@ TextureImporter:
       Layla_11: -1330066871
       Layla_12: 759903859
       Layla_13: 605462315
+      Layla_14: -1454764298
       Layla_2: 80293923
       Layla_3: 2097889631
       Layla_4: -774970164

@@ -29,7 +29,12 @@ namespace Platformer.Mechanics
         /// </summary>
         /// <value></value>
         public bool IsGrounded { get; private set; }
-
+    
+        /// <summary>
+        /// Is the entity currently flying?
+        /// </summary>
+        /// <value></value>
+        public bool isFlying = false;
         protected Vector2 targetVelocity;
         protected Vector2 groundNormal;
         protected Rigidbody2D body;
@@ -101,6 +106,11 @@ namespace Platformer.Mechanics
 
         protected virtual void FixedUpdate()
         {
+
+            if (isFlying) {
+                return;
+            }
+            
             //if already falling, fall faster than the jump speed, otherwise use normal gravity.
             if (velocity.y < 0)
                 velocity += gravityModifier * Physics2D.gravity * Time.deltaTime;
